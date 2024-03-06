@@ -19,6 +19,13 @@ window.onload = () => {
                 longitude: e.detail.position.longitude
             });
             document.querySelector("a-scene").appendChild(entity);
+
+            // set lat and lang of text example
+            const textEl = document.getElementById('textTest');
+            textEl.setAttribute('gps-entity-place', {
+                latitude: e.detail.position.latitude,
+                longitude: e.detail.position.longitude
+            })
         }
         testEntityAdded = true;
     });
