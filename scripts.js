@@ -40,6 +40,30 @@ window.onload = () => {
             })
 
             document.querySelector("a-scene").appendChild(textEntity);
+
+            // model
+            const modelEntity = document.createElement('a-entity');
+
+            modelEntity.setAttribute('gltf-model', './assets/gameboy/scene.gltf');
+
+            modelEntity.setAttribute('scale', {
+                x: 400,
+                y: 400,
+                z: 400
+            });
+
+            modelEntity.setAttribute('rotation', {
+                x: 0,
+                y: 250,
+                z: 0
+            })
+
+            modelEntity.setAttribute('gps-new-entity-place', {
+                latitude: e.detail.position.latitude + 0.001,
+                longitude: e.detail.position.longitude
+            })
+
+            document.querySelector("a-scene").appendChild(modelEntity);
         }
         testEntityAdded = true;
     });
