@@ -44,17 +44,17 @@ window.onload = () => {
             // model
             const modelEntity = document.createElement('a-entity');
 
-            modelEntity.setAttribute('gltf-model', './assets/gameboy/scene.gltf');
+            modelEntity.setAttribute('gltf-model', './assets/laptop/laptop.glb');
 
             modelEntity.setAttribute('scale', {
-                x: 400,
-                y: 400,
-                z: 400
+                x: 600,
+                y: 600,
+                z: 600
             });
 
             modelEntity.setAttribute('rotation', {
                 x: 0,
-                y: 250,
+                y: 0,
                 z: 0
             })
 
