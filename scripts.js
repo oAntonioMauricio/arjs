@@ -68,3 +68,13 @@ window.onload = () => {
         testEntityAdded = true;
     });
 };
+
+const closeAr = () => {
+    window.close();
+}
+
+const resetView = () => {
+    console.log("reseting view...");
+
+    
+}
