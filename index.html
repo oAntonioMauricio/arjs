@@ -24,9 +24,9 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg>
     </div>
-    <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
+    <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: true
         renderer='antialias: true; alpha: true'>
-        <a-camera gps-new-camera='gpsMinDistance: 1' simulateLatitude="1" simulateLongitude="1"></a-camera>
+        <a-camera rotation-reader gps-new-camera='gpsMinDistance: 1' simulateLatitude="1" simulateLongitude="1"></a-camera>
         <a-entity id="myEnt" material='color: red' geometry='primitive: box' scale="10 10 10"></a-entity>
     </a-scene>
     <div class="centered">
