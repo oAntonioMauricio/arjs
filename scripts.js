@@ -17,11 +17,11 @@ window.onload = () => {
 
             modelEntity.setAttribute('gltf-model', './assets/fridge/kitchenFridge.glb');
 
-            modelEntity.setAttribute('scale', {
+           /*  modelEntity.setAttribute('scale', {
                 x: 400,
                 y: 400,
                 z: 400
-            });
+            }); */
 
             modelEntity.setAttribute('rotation', {
                 x: 0,
@@ -30,7 +30,7 @@ window.onload = () => {
             })
 
             modelEntity.setAttribute('gps-new-entity-place', {
-                latitude: e.detail.position.latitude + 0.001,
+                latitude: e.detail.position.latitude + 0.000009,
                 longitude: e.detail.position.longitude
             })
 
