@@ -26,7 +26,7 @@
     </div>
     <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
         renderer='antialias: true; alpha: true'>
-        <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
+        <a-camera gps-new-camera='gpsMinDistance: 5' simulateLatitude="1" simulateLongitude="1"></a-camera>
         <a-entity id="myEnt" material='color: red' geometry='primitive: box' scale="10 10 10"></a-entity>
     </a-scene>
     <div class="centered">
