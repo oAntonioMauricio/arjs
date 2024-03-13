@@ -9,10 +9,10 @@ window.onload = () => {
             alert(`Got first GPS position: lon ${e.detail.position.longitude} lat ${e.detail.position.latitude}`);
 
             // model
-            modelEntity = document.getElementById('myEnt');
+            modelEntity = document.getElementById('myText');
 
-            modelEntity.setAttribute('gps-new-entity-place', {
-                latitude: e.detail.position.latitude + 0.0001,
+            modelEntity.setAttribute('gps-entity-place', {
+                latitude: e.detail.position.latitude,
                 longitude: e.detail.position.longitude
             })
         }
