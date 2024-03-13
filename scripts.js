@@ -12,7 +12,7 @@ window.onload = () => {
             modelEntity = document.getElementById('myEnt');
 
             modelEntity.setAttribute('gps-new-entity-place', {
-                latitude: e.detail.position.latitude + 0.001,
+                latitude: e.detail.position.latitude + 0.0001,
                 longitude: e.detail.position.longitude
             })
         }
